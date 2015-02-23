@@ -1,0 +1,61 @@
+/*reset*/
+body,h1,h2,h3,h4,p,dl,dd,ul,ol,form,input,textarea,th,td,select{margin: 0;padding: 0;}
+em{font-style: normal;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{border: none;vertical-align: top;}
+table{border-collapse: collapse;}
+input,textarea{outline: none;}
+textarea{resize:none;overflow: auto;}
+body{font-size:12px;font-family:"微软雅黑";}
+
+/*commonStyle*/
+.fl{float: left;}
+.fr{float: right;}
+/*兼容IE的清浮动*/
+.cl{zoom:1;}
+.cl:after{content:'';display:block;clear: both;}
+.gradient{
+	background:-webkit-linear-gradient(top,#ffffff,#f3f3f3);
+	background:-moz-linear-gradient(top,#ffffff,#f3f3f3);
+	background:-ms-linear-gradient(top,#ffffff,#f3f3f3);
+	background:-o-linear-gradient(top,#ffffff,#f3f3f3);
+	background:linear-gradient(top,#ffffff,#f3f3f3);
+	/*IE滤镜实现渐变 ie8+*/
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient( GradientType = 0,startColorstr = '#ffffff', 
+endColorstr = '#f3f3f3' )";
+	/*ie7及以下，做优雅降级,取渐变色的中间色给它*/
+	+background:#f9f9f9;
+}
+/*layout*/
+.wrap{width: 960px;margin:0 auto;}
+#header{height: 30px;}
+#nav{height: 95px;background-color: #cdcd00;}
+#search{height: 127px;border: 1px solid #dbdbdb;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;}
+.main-wrap,.side-wrap{margin-top: 10px;}
+.main-wrap{width: 712px;}
+.main{padding-bottom: 10px;}
+/*
+IE6-7下margin-bottom失效的问题:
+当父级清浮动，容器内有左浮动、右浮动的时候，在ie6、7下，浮动元素的margin-bottom会失效
+解决办法:去掉浮动元素的margin-bottom,改为给父级增加padding-bottom
+*/
+.section-side,.side-ad,.main-ad{margin-bottom: 10px;}
+.section,.tab{width: 318px;;height:200px;}
+.section{padding: 0 15px;;border: 1px solid #e5e5e5;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;}
+/*选项卡*/
+.tab{position: relative;width: 352px;height: 100px;}
+.tab .slide li{position:relative;z-index:2;font-size: 12px;height: 33px;line-height:33px;text-align: center;width: 172px;border: 1px solid #e5e5e5;-webkit-border-radius: 6px 6px 0 0;-moz-border-radius: 6px 6px 0 0;border-radius: 6px 6px 0 0;border-bottom:none;}
+.tab .slide li.active{background-color: #fff;height: 34px;}
+.tab .tab-content{position: absolute;z-index: 1;top:34px;left: 0px;width: 350px;height: 80px;border: 1px solid #e5e5e5;-webkit-border-radius: 0 0 6px 6px;-moz-border-radius: 0 0 6px 6px;border-radius: 0 0 6px 6px;}
+.section-side{padding: 0 12px;}
+/*
+如果需要产生一张撑满整个div的圆角图片,有三种方法
+1.ps直接切圆角图，父级不要加边框色
+2.直接给该图片加border-radius属性
+3.给图片的父级加border-radius属性，但是还要加overflow:hidden;
+*/
+.main-ad,.side-ad{-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;overflow: hidden;}
+.side-wrap{width: 242px;}
+.section-side{height: 200px;border:1px solid #e5e5e5;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+#footer{border: 1px solid #e5e5e5;height:100px;margin-bottom: 30px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
