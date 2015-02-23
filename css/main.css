@@ -31,7 +31,7 @@ endColorstr = '#f3f3f3' )";
 .wrap{width: 960px;margin:0 auto;}
 #header{height:30px;}
 #nav{height: 95px;background-color: #fff;}
-#search{height: 127px;border: 1px solid #dbdbdb;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;}
+#search{position: relative;height: 127px;border: 1px solid #dbdbdb;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;}
 .main-wrap,.side-wrap{margin-top: 10px;}
 .main-wrap{width: 712px;}
 .main{padding-bottom: 10px;}
@@ -56,11 +56,12 @@ IE6-7下margin-bottom失效的问题:
 #footer{border: 1px solid #e5e5e5;height:100px;margin-bottom: 30px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
 
 /*小部分的管理*/
-/*选项卡,一种诡异的选项卡布局思路,用相对定位、绝对定位、一像素的高度差、z-index来布局*/
+/*tab,一种诡异的选项卡布局思路,用相对定位、绝对定位、一像素的高度差、z-index来布局*/
 .tab{position: relative;width: 352px;height: 100px;}
 .tab .slide li{position:relative;z-index:2;font-size: 12px;height: 33px;line-height:33px;text-align: center;width: 172px;border: 1px solid #e5e5e5;-webkit-border-radius: 6px 6px 0 0;-moz-border-radius: 6px 6px 0 0;border-radius: 6px 6px 0 0;border-bottom:none;}
 .tab .slide li.active{background-color: #fff;height: 34px;}
 .tab .tab-content{position: absolute;z-index: 1;top:34px;left: 0px;width: 350px;height: 80px;border: 1px solid #e5e5e5;-webkit-border-radius: 0 0 6px 6px;-moz-border-radius: 0 0 6px 6px;border-radius: 0 0 6px 6px;}
+
 /*header*/
 /*使用line-height在ie6下不起作用诶*/
 .city{float: left;color: #666666;cursor:pointer;padding:4px 0 0 20px;}
@@ -75,7 +76,7 @@ IE6-7下margin-bottom失效的问题:
 .link .join{background-position: 0px 2px;}
 .link .manage{background-position: 0px -40px;_background-position:0px -42px;}
 
-/*导航*/
+/*nav*/
 #nav{position: relative;}
 #nav ul{padding-top:14px;}
 #nav ul li{width: 66px;float: left;text-align: center;}
@@ -106,3 +107,10 @@ IE6-7下margin-bottom失效的问题:
 #nav ul li.nav-bg-9 a:hover{background-position: -522px -66px;}
 #nav ul li.nav-bg-10 a{background-position:-588px 0px;}
 #nav ul li.nav-bg-10 a:hover{background-position: -588px -66px;}
+
+/*search*/
+/*box-shadow和border-radius虽然都是css3的属性，但是支持它的浏览器都只有一种写法就行了*/
+#search .search-tab{position: absolute;z-index: 2;top: -11px;left: 226px;}
+#search .search-tab li{cursor: pointer;background-color: #fff;;float: left;width: 78px;height: 26px;line-height: 26px;margin-right: 1px;text-align: center;border: 1px solid #f8d0bf;border-radius: 5px 5px 0 0;border-bottom:none;color:#000;}
+#search .search-tab .active{color: #fff;text-shadow:1px 2px 1px #b71701;position: relative;top: -1px;height: 28px;background-color: #e21c01;border-color: #c40d0e;}
+#search .search-bar{position: absolute;left: -1px;top: 16px;width: 958px;height: 65px;border: 1px solid #c40d0e;background-color: #e21c01;box-shadow:1px 1px 2px #d2d2d2;border-radius: 5px}
