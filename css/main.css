@@ -64,10 +64,13 @@ IE6-7下margin-bottom失效的问题:
 /*header*/
 /*使用line-height在ie6下不起作用诶*/
 .city{float: left;color: #666666;cursor:pointer;padding:4px 0 0 20px;}
-.city .active{color: #d60d03;}
+.city .active,.city .active:hover{background-color: #fff;;color: #d60d03;}
 .city a{padding:0 10px;display:inline-block;height: 20px;line-height: 20px;margin-left: 4px;color:#999999;border: 1px solid #e5e5e5;background-color: #fff;-webkit-box-shadow: 1px 1px 0px #ededed;-moz-box-shadow: 1px 1px 0px #ededed;box-shadow: 1px 1px 0px #ededed;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;}
 .city a:first-child{margin-left:16px;}
 .city a:hover{background-color: #efefef;}
-.link{float: right;cursor: pointer;line-height: 30px;padding-right: 20px;}
-.link a{color: #666666;}
+/*导航文字与竖线之间的距离可以用word-spacing来编写*/
+.link{float: right;cursor: pointer;color: #d5d5d5;word-spacing: 4px;line-height: 30px;padding-right: 20px;}
+.link a{color: #666666;padding-left: 20px;background: url("../img/head_link.gif") no-repeat;}
 .link a:hover{color:#cd0000;}
+.link .join{background-position: 0px 2px;}
+.link .manage{background-position: 0px -40px;_background-position:0px -42px;}
