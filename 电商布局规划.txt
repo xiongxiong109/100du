@@ -1,0 +1,26 @@
+布局模块:
+header
+nav
+search
+body
+	main
+		section	tab
+		adbanner
+	side
+		section_side
+footer
+
+重置样式:
+*{margin:0;padding:0;}
+公共样式:
+.fl{}
+.fr{}
+.cl{}
+.wrap{w:;m:;}
+
+模块化布局的思想 :
+1.分析整体的页面结构，建立文件目录，引入相应文件。
+2.以尽可能少的、可重用的class来搭建一个整体的div布局。
+3.量身定制reset样式，定制公共样式。
+4.将搭建好的div布局样式引入css中编写。
+5.先写可重用的样式，分块布局。
