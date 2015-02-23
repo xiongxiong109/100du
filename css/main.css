@@ -29,7 +29,7 @@ endColorstr = '#f3f3f3' )";
 }
 /*layout*/
 .wrap{width: 960px;margin:0 auto;}
-#header{height: 30px;}
+#header{height:30px;}
 #nav{height: 95px;background-color: #cdcd00;}
 #search{height: 127px;border: 1px solid #dbdbdb;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;}
 .main-wrap,.side-wrap{margin-top: 10px;}
@@ -43,11 +43,6 @@ IE6-7下margin-bottom失效的问题:
 .section-side,.side-ad,.main-ad{margin-bottom: 10px;}
 .section,.tab{width: 318px;;height:200px;}
 .section{padding: 0 15px;;border: 1px solid #e5e5e5;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;}
-/*选项卡,一种诡异的选项卡布局思路,用相对定位、绝对定位、一像素的高度差、z-index来布局*/
-.tab{position: relative;width: 352px;height: 100px;}
-.tab .slide li{position:relative;z-index:2;font-size: 12px;height: 33px;line-height:33px;text-align: center;width: 172px;border: 1px solid #e5e5e5;-webkit-border-radius: 6px 6px 0 0;-moz-border-radius: 6px 6px 0 0;border-radius: 6px 6px 0 0;border-bottom:none;}
-.tab .slide li.active{background-color: #fff;height: 34px;}
-.tab .tab-content{position: absolute;z-index: 1;top:34px;left: 0px;width: 350px;height: 80px;border: 1px solid #e5e5e5;-webkit-border-radius: 0 0 6px 6px;-moz-border-radius: 0 0 6px 6px;border-radius: 0 0 6px 6px;}
 .section-side{padding: 0 12px;}
 /*
 如果需要产生一张撑满整个div的圆角图片,有三种方法
@@ -59,3 +54,20 @@ IE6-7下margin-bottom失效的问题:
 .side-wrap{width: 242px;}
 .section-side{height: 200px;border:1px solid #e5e5e5;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
 #footer{border: 1px solid #e5e5e5;height:100px;margin-bottom: 30px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+
+/*小部分的管理*/
+/*选项卡,一种诡异的选项卡布局思路,用相对定位、绝对定位、一像素的高度差、z-index来布局*/
+.tab{position: relative;width: 352px;height: 100px;}
+.tab .slide li{position:relative;z-index:2;font-size: 12px;height: 33px;line-height:33px;text-align: center;width: 172px;border: 1px solid #e5e5e5;-webkit-border-radius: 6px 6px 0 0;-moz-border-radius: 6px 6px 0 0;border-radius: 6px 6px 0 0;border-bottom:none;}
+.tab .slide li.active{background-color: #fff;height: 34px;}
+.tab .tab-content{position: absolute;z-index: 1;top:34px;left: 0px;width: 350px;height: 80px;border: 1px solid #e5e5e5;-webkit-border-radius: 0 0 6px 6px;-moz-border-radius: 0 0 6px 6px;border-radius: 0 0 6px 6px;}
+/*header*/
+/*使用line-height在ie6下不起作用诶*/
+.city{float: left;color: #666666;cursor:pointer;padding:4px 0 0 20px;}
+.city .active{color: #d60d03;}
+.city a{padding:0 10px;display:inline-block;height: 20px;line-height: 20px;margin-left: 4px;color:#999999;border: 1px solid #e5e5e5;background-color: #fff;-webkit-box-shadow: 1px 1px 0px #ededed;-moz-box-shadow: 1px 1px 0px #ededed;box-shadow: 1px 1px 0px #ededed;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;}
+.city a:first-child{margin-left:16px;}
+.city a:hover{background-color: #efefef;}
+.link{float: right;cursor: pointer;line-height: 30px;padding-right: 20px;}
+.link a{color: #666666;}
+.link a:hover{color:#cd0000;}
