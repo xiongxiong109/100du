@@ -43,7 +43,7 @@ IE6-7下margin-bottom失效的问题:
 .section-side,.side-ad,.main-ad{margin-bottom: 10px;}
 .section,.tab{width: 318px;;height:200px;}
 .section{padding: 0 15px;;border: 1px solid #e5e5e5;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;}
-/*选项卡*/
+/*选项卡,一种诡异的选项卡布局思路,用相对定位、绝对定位、一像素的高度差、z-index来布局*/
 .tab{position: relative;width: 352px;height: 100px;}
 .tab .slide li{position:relative;z-index:2;font-size: 12px;height: 33px;line-height:33px;text-align: center;width: 172px;border: 1px solid #e5e5e5;-webkit-border-radius: 6px 6px 0 0;-moz-border-radius: 6px 6px 0 0;border-radius: 6px 6px 0 0;border-bottom:none;}
 .tab .slide li.active{background-color: #fff;height: 34px;}
