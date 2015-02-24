@@ -41,7 +41,7 @@ IE6-7下margin-bottom失效的问题:
 解决办法:去掉浮动元素的margin-bottom,改为给父级增加padding-bottom
 */
 .section-side,.side-ad,.main-ad{margin-bottom: 10px;}
-.section,.tab{width: 318px;;height:200px;}
+.section,.tab{width: 318px;}
 .section{padding: 0 15px;;border: 1px solid #e5e5e5;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;}
 .section-side{padding: 0 12px;}
 /*
@@ -140,3 +140,11 @@ IE6-7下margin-bottom失效的问题:
 .update .update-wrap ul li a span{color:#999999;}
 .update .arrow-wrap{padding-top: 7px;}
 .arrow-wrap .a-up-red{margin-bottom: 5px;}
+
+/*video*/
+.video-title{height: 40px;line-height: 40px;color:#d90000;font-family: "Arial";font-size: 14px;background: url("../img/video_sp.png") 105px 10px no-repeat;}
+.video{}
+.video-list{padding:16px 0 8px 85px;background: url("../img/video_sp.png") 0px -46px no-repeat;}
+.video-list li{text-indent: 4px;padding-bottom: 8px;background: url("../img/list-dot.png") 0px 6px no-repeat;font-size: 12px;}
+.video-list li a{color: #4d4d4d;}
+.video-list li a:hover{text-decoration: underline;}
