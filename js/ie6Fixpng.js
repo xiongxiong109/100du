@@ -3,6 +3,7 @@ DD_belatedPNG.fix('div');
 DD_belatedPNG.fix('button');
 DD_belatedPNG.fix('a');
 DD_belatedPNG.fix('h1');
+DD_belatedPNG.fix('h2');
 DD_belatedPNG.fix('h5');
 DD_belatedPNG.fix('form');
 DD_belatedPNG.fix('p img');
