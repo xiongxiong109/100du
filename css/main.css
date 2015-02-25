@@ -57,11 +57,12 @@ IE6-7下margin-bottom失效的问题:
 
 /*小部分的管理*/
 /*tab,一种诡异的选项卡布局思路,用相对定位、绝对定位、一像素的高度差、z-index来布局*/
-.tab{position: relative;width: 352px;height: 100px;}
-.tab .slide li{position:relative;z-index:2;font-size: 12px;height: 33px;line-height:33px;text-align: center;width: 172px;border: 1px solid #e5e5e5;-webkit-border-radius: 6px 6px 0 0;-moz-border-radius: 6px 6px 0 0;border-radius: 6px 6px 0 0;border-bottom:none;}
+.tab{position: relative;width:352px;}
+.tab .slide {overflow: hidden;zoom: 1;}
+.tab .slide li{cursor: pointer;position:relative;z-index:2;font-size: 12px;height: 33px;line-height:33px;text-align: center;width: 172px;border: 1px solid #e5e5e5;-webkit-border-radius: 6px 6px 0 0;-moz-border-radius: 6px 6px 0 0;border-radius: 6px 6px 0 0;border-bottom:none;}
 .tab .slide li.active{background-color: #fff;height: 34px;}
-.tab .tab-content{position: absolute;z-index: 1;top:34px;left: 0px;width: 350px;height: 80px;border: 1px solid #e5e5e5;-webkit-border-radius: 0 0 6px 6px;-moz-border-radius: 0 0 6px 6px;border-radius: 0 0 6px 6px;}
-
+.tab .tab-content{position: absolute;z-index: 1;top:34px;left: 0px;width: 320px;border: 1px solid #e5e5e5;-webkit-border-radius: 0 0 6px 6px;-moz-border-radius: 0 0 6px 6px;border-radius: 0 0 6px 6px;}
+.tab-content{padding: 0 15px;}
 /*header*/
 /*使用line-height在ie6下不起作用诶*/
 .city{float: left;color: #666666;cursor:pointer;padding:4px 0 0 20px;}
@@ -143,8 +144,30 @@ IE6-7下margin-bottom失效的问题:
 
 /*video*/
 .video-title{height: 40px;line-height: 40px;color:#d90000;font-family: "Arial";font-size: 14px;background: url("../img/video_sp.png") 105px 10px no-repeat;}
-.video{}
 .video-list{padding:16px 0 8px 85px;background: url("../img/video_sp.png") 0px -46px no-repeat;}
 .video-list li{text-indent: 4px;padding-bottom: 8px;background: url("../img/list-dot.png") 0px 6px no-repeat;font-size: 12px;}
 .video-list li a{color: #4d4d4d;}
 .video-list li a:hover{text-decoration: underline;}
+
+/*model-title*/
+.model-title{font-size: 14px;color: #2b2d2d;_padding-top:10px;}
+.model-title em{color:#cc0d13;font-family: "Arial";padding-right: 8px;}
+.model-title .arrow{display: inline-block;position: relative;left: 9px;}
+.gradient .model-title em{color:#666666;}
+
+/*tab*/
+.tab-content .tab-u li{width: 318px;height: 110px;background: url("../img/hot.png") 100% 10px no-repeat;}
+.tab-img,.tab-art{padding: 10px 0;}
+.tab-content .tab-u .tab-img{position: relative;}
+.tab-img .save{position: absolute;bottom:-5px;right: -5px;}
+.tab-content .tab-u .tab-art{padding-left: 20px;}
+.tab-content .tab-u .tab-art h3{padding-bottom: 12px;font-size: 12px;}
+.tab-content .tab-u .tab-art p{color: #6e6e6e;line-height: 17px;} 
+.tab-content .tab-u li a{color: #bb0d0d;}
+.tab-content .tab-u li a:hover{text-decoration: underline;}
+
+/*more*/
+.more{text-align: right;padding: 8px 0;cursor: pointer;}
+
+.main .tab{height: 330px;}
+.main .tab .tab-content{padding:10px 15px;}
