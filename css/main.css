@@ -195,4 +195,17 @@ li .model-title{_padding-top:6px;}
 .clen dd{cursor:default;float: left;width: 40px;height: 40px;margin:2px;_margin:2px 0 0 3px;text-align: center;line-height: 40px;background-color: #ededed;color: #9c9c9c;}
 .clen dd.next-mon{background-color: #f8f8f8;color: #d2d2d2;}
 .clen dd#today{background:url("../img/show-min.jpg") 0px 0px no-repeat;}
-.clen dd#ac1{background:url("../img/pezza-min.jpg") 0px 0px no-repeat;}
+.clen dd#ac1{background:url("../img/pizza-min.jpg") 0px 0px no-repeat;}
+/*鼠标移入显示内容*/
+.hover-wrap{width: 318px;height: 108px;border: 1px solid #c0c0c0;box-shadow: 4px 4px 1px #bfbfbf;}
+.hover-info{padding: 10px 15px;position: relative;}
+.hover-info .big{border: 2px solid #dddddd;}
+.hover-info h3{color: #333333;font-size: 10px;}
+.hover-info h3 em{font-size: 16px;color: #cccccc;padding-right: 7px;}
+.hover-content h3,
+.hover-content p{padding-left: 5px;}
+.hover-content p{color:#999;line-height: 18px;padding-top: 12px;}
+.hover-info a{float: right;}
+.hover-info .arrow{width: 8px;height: 16px;border: 0px;position: absolute;top:47px;left:-8px;z-index: 999;}
+.hover-content{width: 199px;height: 86px;}
+
