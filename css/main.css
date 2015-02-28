@@ -42,7 +42,7 @@ IE6-7下margin-bottom失效的问题:
 */
 .section-side,.side-ad,.main-ad{margin-bottom: 10px;}
 .section,.tab{width: 318px;}
-.section{padding: 0 15px;;border: 1px solid #e5e5e5;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;}
+.section{padding:0 15px;border: 1px solid #e5e5e5;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;}
 .section-side{padding: 0 12px;}
 /*
 如果需要产生一张撑满整个div的圆角图片,有三种方法
@@ -52,7 +52,7 @@ IE6-7下margin-bottom失效的问题:
 */
 .main-ad,.side-ad{-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;overflow: hidden;}
 .side-wrap{width: 242px;}
-.section-side{height: 200px;border:1px solid #e5e5e5;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+.section-side{border:1px solid #e5e5e5;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
 #footer{border: 1px solid #e5e5e5;height:100px;margin-bottom: 30px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
 
 /*小部分的管理*/
@@ -150,8 +150,9 @@ IE6-7下margin-bottom失效的问题:
 .video-list li a:hover{text-decoration: underline;}
 
 /*model-title*/
-.model-title{font-size: 14px;color: #2b2d2d;_padding-top:10px;}
-.model-title em{color:#cc0d13;font-family: "Arial";padding-right: 8px;}
+li .model-title{_padding-top:6px;}
+.model-title,.more-title{font-size: 14px;color: #2b2d2d;}
+.model-title em,.more-title em{color:#cc0d13;font-family: "Arial";padding-right: 8px;}
 .model-title .arrow{display: inline-block;position: relative;left: 9px;}
 .gradient .model-title em{color:#666666;}
 
@@ -167,7 +168,44 @@ IE6-7下margin-bottom失效的问题:
 .tab-content .tab-u li a:hover{text-decoration: underline;}
 
 /*more*/
-.more{text-align: right;padding: 8px 0;cursor: pointer;}
-
+.more{text-align: right;height: 34px;line-height: 34px;+height:24px;+line-height:24px;}
+.more img{vertical-align: bottom;}
+.more-title{height: 30px;line-height: 30px;position:relative;_top:5px;}
+.more-title a{position:absolute;right:0px;}
+.more-title a img{vertical-align: middle;}
 .main .tab{height: 330px;}
 .main .tab .tab-content{padding:10px 15px;}
+
+/*calendar*/
+#date{background: url("../img/calendar.jpg") top center no-repeat;}
+.daily{width:100%;height: 72px;position: relative;}
+.daily span,
+.daily h3{position: absolute;}
+.daily .en{color:#ea2b31;font-size: 10px;font-family: "Arial";top: 12px;left:24px;font-weight: bold;}
+.daily .ch{color:#333333;font-size: 24px;top:26px;left:24px;}
+.daily .time{color:#ec1c16;font-size: 30px;top: 16px;left: 128px;}
+.daily-title{width: 204px;padding:0 15px 20px 0;}
+.daily-title h4{color: #333333;font-size: 12px;font-weight: bold;}
+.daily-title h4 em{color: #cf1812;display: inline-block;width: 25px;height: 25px;line-height: 25px;text-align: center;border:1px solid #d2d2d2;border-radius:3px;margin-right: 4px;}
+.daily-title h4 strong{padding-left: 3px;}
+.daily-title p{color: #999999;padding-top: 8px;}
+
+.clen{width: 308px;margin:0 auto;padding-bottom: 20px;}
+.clen dt{float: left;background-color: #f9f9f9;color: #333333;height: 35px;line-height: 35px;padding:0 9px;font-weight: bold;}
+.clen dd{cursor:default;float: left;width: 40px;height: 40px;margin:2px;_margin:2px 0 0 3px;text-align: center;line-height: 40px;background-color: #ededed;color: #9c9c9c;}
+.clen dd.next-mon{background-color: #f8f8f8;color: #d2d2d2;}
+.clen dd#today{background:url("../img/show-min.jpg") 0px 0px no-repeat;}
+.clen dd#ac1{background:url("../img/pizza-min.jpg") 0px 0px no-repeat;}
+/*鼠标移入显示内容*/
+.hover-wrap{width: 318px;height: 108px;border: 1px solid #c0c0c0;box-shadow: 4px 4px 1px #bfbfbf;}
+.hover-info{padding: 10px 15px;position: relative;}
+.hover-info .big{border: 2px solid #dddddd;}
+.hover-info h3{color: #333333;font-size: 10px;}
+.hover-info h3 em{font-size: 16px;color: #cccccc;padding-right: 7px;}
+.hover-content h3,
+.hover-content p{padding-left: 5px;}
+.hover-content p{color:#999;line-height: 18px;padding-top: 12px;}
+.hover-info a{float: right;}
+.hover-info .arrow{width: 8px;height: 16px;border: 0px;position: absolute;top:47px;left:-8px;z-index: 999;}
+.hover-content{width: 199px;height: 86px;}
+
