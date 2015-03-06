@@ -1,403 +1,752 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="css/main.css" />
-	<!-- 图标 -->
-	<link rel="shortcut icon" href="img/100du.ico" />
-	<!--[if IE 6]>
-	<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
-	<script type="text/javascript" src="js/ie6Fixpng.js"></script>
-	<![endif]-->
-	<title>电商网站</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<!-- 图标 -->
+<link rel="shortcut icon" href="img/100du.ico" />
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript" src="js/ie6Fixpng.js"></script>
+<![endif]-->
+<title>电商网站</title>
 </head>
 <body>
-	<!-- 包裹层 -->
-	<div class="wrap">
-		<!-- 头部 -->
-		<div id="header" class="gradient">
-			<!-- 关于标签的选择:尽量选择简单的标签结构。dl、ul适用于标签内容较多的情况 -->
-			<p class="city">
-				切换城市:
-				<a href="#" class="active">北京</a>
-				<a href="#">上海</a>
-				<a href="#">福州</a>
-				<a href="#">广州</a>
-				<a href="#">青岛</a>
-			</p>
-			<p class="link">
-				<a href="#" class="join">加盟100度</a>
-				|
-				<a href="#" class="manage">店铺管理</a>
-			</p>
-		</div>
-		<!-- 导航 -->
-		<div id="nav">
-			<!-- 左侧导航 -->
-			<ul class="nav1">
-				<li class="nav-bg-1"><a href="#">美食</a></li>
-				<li class="nav-bg-2"><a href="#">夜店</a></li>
-				<li class="nav-bg-3"><a href="#">购物</a></li>
-				<li class="nav-bg-4"><a href="#">文化</a></li>
-				<li class="nav-bg-5"><a href="#">休闲</a></li>
-			</ul>
-			<!-- logo -->
-			<h1><a href="#"><img src="img/logo.png" alt="100度"></a></h1>
-			<!-- 右侧导航 -->
-			<ul class="nav2 cl">
-				<li class="nav-bg-6"><a href="#">烧客空间</a></li>
-				<li class="nav-bg-7"><a href="#">知道分子</a></li>
-				<li class="nav-bg-8"><a href="#">白吃白拿</a></li>
-				<li class="nav-bg-9"><a href="#">烧客论坛</a></li>
-				<li class="nav-bg-10"><a href="#">企业俱乐部</a></li>
-			</ul>
-		</div>
-		<!-- 搜索 -->
-		<div id="search" class="gradient">
-			<ul class="search-tab">
-				<li class="active">搜店</li>
-				<li class="gradient">地址</li>
-				<li class="gradient">优惠券</li>
-				<li class="gradient">全文</li>
-				<li class="gradient">视频</li>
-			</ul>
-			<div class="search-bar">
-				<img src="img/100du-tag.png" alt="一百度" class="tag">
-				<form action="">
-					<input type="text" value="例如：荷棠鱼坊烤鱼 或 樱花日本料理" class="text">
-					<!-- IE6下不支持h5的image类型的输入框 -->
-					<input type="submit" class="btn" value=''>
-				</form>
-				<div class="hot-search">
-					<p><a href="#">金钱豹</a>、<a href="#">大江南</a>、<a href="#">湘水之珠</a>、<a href="#">德瑀楼</a>
-					<a href="#">荷棠鱼坊烤鱼</a>、<a href="#">SOHO尚都</a>、<a href="#">湘味楼</a>...</p>
-				</div>
-			</div>
-			<div class="update">
-				<div class="update-wrap">
-					<ul>
-						<li>
-							<a href="#">
-								<em>萱萱</em>
-								<span>5分钟前</span> 写了一篇新文章：那些灿烂华美的瞬间…</a>
-						</li>
-						<li>
-							<a href="#">
-								<em>熊熊</em>
-								<span>7分钟前</span> 写了一篇新文章：那些灿烂华美的瞬间…</a>
-						</li>
-					</ul>
-				</div>
-				<div class="arrow-wrap fr">
-					<div class="arrow a-up-red"></div>
-					<div class="arrow a-down-red"></div>
-				</div>
-			</div>
-		</div>
-		<!-- 主体 -->
-		<div class="cl">
-			<!-- 大块 -->
-			<div class="main-wrap fl">
-				<!-- 热门展示 -->
-				<div class="main cl">
-					<!-- what hot -->
-					<div class="section fl">
-						<h2 class="video-title">WHAT' HOT</h2>
-						<div class="video">
-							<img src="img/video.png" alt="视频模块">
-						</div>
-						<ul class="video-list">
-							<li><a href="#">现场实录:杭州机场国航系统的崩溃</a></li>
-							<li><a href="#">网友自拍国航航班晚点后的遭遇</a></li>
-							<li><a href="#">【拍客】绝对最奢侈的航班&nbsp;注意第41秒</a></li>
-						</ul>
-					</div>
-					<!-- shop tab -->
-					<div class="tab fr">
-						<ul class="slide">
-							<li class="active fl">
-								<h2 class="model-title"><em>HOT SHOP</em>红店铺<a href="javascript:;" class="arrow a-down-red"></a></h2>
-							</li>
-							<li class="gradient fr">
-								<h2 class="model-title"><em>EW SHOP</em>新开张<a href="javascript:;" class="arrow a-down-grey"></a></h2>
-							</li>
-						</ul>
-						<div class="tab-content">
-							<ul class="tab-u" id="t1">
-								<li>
-									<div class="tab-img fl">
-										<img src="img/food.png" alt="国际酒店"/>
-										<img src="img/save.png" alt="节省" class="save"/>
-									</div>
-									<div class="tab-art fl">
-										<a href="#">
-											<h3>御舟和涵珍园国际酒店</h3>
-										</a>
-										<p>区域：朝阳/CBD</p>
-										<p>人均：180元</p>
-										<p>人气：12321</p>
-									</div>
-								</li>
-								<li>
-									<div class="tab-img fl">
-										<img src="img/food.png" alt="国际酒店"/>
-									</div>
-									<div class="tab-art fl">
-										<a href="#">
-											<h3>御舟和涵珍园国际酒店</h3>
-										</a>
-										<p>区域：朝阳/CBD</p>
-										<p>人均：180元</p>
-										<p>人气：12321</p>
-									</div>
-								</li>
-								<li>
-									<div class="tab-img fl">
-										<img src="img/food.png" alt="国际酒店"/>
-									</div>
-									<div class="tab-art fl">
-										<a href="#">
-											<h3>御舟和涵珍园国际酒店</h3>
-										</a>
-										<p>区域：朝阳/CBD</p>
-										<p>人均：180元</p>
-										<p>人气：12321</p>
-									</div>
-								</li>
-							</ul>
-							<div class="more">
-								<img src="img/more.png" alt="查看更多"/>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- banner广告1 -->
-				<div class="main-ad">
-					<img src="img/ad/ad1.jpg" alt="">
-				</div>
-				<!-- 活动与推荐 -->
-				<div class="main cl">
-					<!-- 每日活动 -->
-					<div class="section fl" id="date">
-						<div class="daily">
-							<span class="en">LUCKY YODAY</span>
-							<h3 class="ch">每日活动</h3>
-							<span class="time">2014.2</span>
-						</div>
-						<div class="cl">
-							<img src="img/show.jpg" alt="今日特价" class="fl">
-							<div class="daily-title fr">
-								<h4><em>07</em><em>21</em><strong>本日主题XXXXXXXX</strong></h4>
-								<p>迟到的荣誉--维米尔的写实主义风俗画迟到的荣誉维米尔的写实主义风俗画迟到的荣誉维米尔的写实主义风</p>
-							</div>
-						</div>
-						<dl class="clen cl">
-							<dt>MON</dt>
-							<dt>TUS</dt>
-							<dt>WED</dt>
-							<dt>THU</dt>
-							<dt>FRI</dt>
-							<dt>SAT</dt>
-							<dt>SUN</dt>
-							<dd class="next-mon">29</dd>
-							<dd class="next-mon">30</dd>
-							<dd>1</dd>
-							<dd>2</dd>
-							<dd>3</dd>
-							<dd>4</dd>
-							<dd>5</dd>
-							<dd>6</dd>
-							<dd>7</dd>
-							<dd>8</dd>
-							<dd>9</dd>
-							<dd>10</dd>
-							<dd>11</dd>
-							<dd>12</dd>
-							<dd>13</dd>
-							<dd>14</dd>
-							<dd>15</dd>
-							<dd>16</dd>
-							<dd id="ac1">17</dd>
-							<dd>18</dd>
-							<dd>19</dd>
-							<dd>20</dd>
-							<dd id="today">21</dd>
-							<dd>22</dd>
-							<dd>23</dd>
-							<dd>24</dd>
-							<dd>25</dd>
-							<dd>26</dd>
-							<dd>27</dd>
-							<dd>28</dd>
-							<dd>29</dd>
-							<dd>30</dd>
-							<dd>31</dd>
-							<dd class="next-mon">1</dd>
-							<dd class="next-mon">2</dd>
-							<dd class="next-mon">3</dd>
-							<dd class="next-mon">4</dd>
-							<dd class="next-mon">5</dd>
-							<dd class="next-mon">6</dd>
-							<dd class="next-mon">7</dd>
-							<dd class="next-mon">8</dd>
-							<dd class="next-mon">9</dd>
-						</dl>
-						<div class="hover-wrap">
-							<div class="hover-info">
-								<img src="img/pizza.jpg" alt="" class="big fl">
-								<div class="hover-content fr">
-									<h3><em>MON</em>本日主题XXXXXXXXX</h3>
-									<p>迟到的荣誉--维米尔的写实主义风俗画迟到的荣誉维米尔</p>
-									<a href="#"><img src="img/go.jpg" alt=""></a>
-								</div>
-								<img src="img/arrow.png" alt="" class="arrow">
-							</div>
-						</div>
-					</div>
-					<!-- 精彩推荐 -->
-					<div class="section fr" id="recom">
-						<div class="daily">
-							<span class="en">RECOMMEND</span>
-							<h3 class="ch">精彩推荐</h3>
-						</div>
-						<div class="slider-wrap cl">
-								<ul class="big-slider fl">
-									<li class="active">
-										<a href="#"><img src="img/slide/p1.png" alt="" ></a>
-									</li>
-									<li>
-										<a href="#"><img src="img/slide/p2.png" alt=""></a>
-									</li>
-									<li>
-										<a href="#"><img src="img/slide/p3.png" alt=""></a>
-									</li>
-								</ul>
-								<ul class="tab-slider fr">
-									<li class="active">
-										<a href="javascript:;">
-											<img src="img/slide/p1.png" alt="">
-										</a>
-									</li>
-									<li>
-										<a href="javascript:;">
-											<img src="img/slide/p2.png" alt="">
-										</a>
-									</li>
-									<li>
-										<a href="javascript:;">
-											<img src="img/slide/p3.png" alt="">
-										</a>
-									</li>
-								</ul>
-								<ul class="slider-text">
-									<li>爸爸去哪儿~</li>
-									<li>新帽纸</li>
-									<li>大美女</li>
-								</ul>
-							</div>
-					</div>
-				</div>
-				<!-- subway map bbs -->
-				<div class="main cl">
-					<!-- subway map tab -->
-					<div class="tab fl">
-						<ul class="slide">
-							<li class="active fl">
-								<h2 class="model-title"><em>SUBWAY</em>地铁交通<a href="javascript:;" class="arrow a-down-red"></a></h2>
-							</li>
-							<li class="gradient fr">
-								<h2 class="model-title"><em>MAP</em>生活圈<a href="javascript:;" class="arrow a-down-grey"></a></h2>
-							</li>
-						</ul>
-						<div class="tab-content">
-							<img src="img/map.png" alt="地铁交通">
-						</div>
-					</div>
-					<!-- bbs -->
-					<div class="section fr">
-						<h2 class="more-title">
-							<em>BBS</em>论坛<a href="#" title="点击查看更多"><img src="img/more.png" alt="点击查看更多"></a>
-						</h2>
-					</div>
-				</div>
-				<!-- banner广告2 -->
-				<div class="main-ad">
-					<img src="img/ad/ad1.jpg" alt="">
-				</div>
-				<!-- 知道分子，红人 -->
-				<div class="main cl">
-					<!-- 知道分子 -->
-					<div class="section fl">
-						<h2 class="more-title">
-							<em>LIFESTYLE ADVICE</em>知道分子<a href="#" title="点击查看更多"><img src="img/more.png" alt="点击查看更多"></a>
-						</h2>
-					</div>
-					<!-- 红人 -->
-					<div class="section fr">
-						<h2 class="more-title">
-							<em>HOT</em>红人烧客<a href="#" title="点击查看更多"><img src="img/more.png" alt="点击查看更多"></a>
-						</h2>
-					</div>
-				</div>
-				<!-- help and media -->
-				<div class="main cl">
-					<!-- help -->
-					<div class="section fl">
-						<h2 class="more-title">
-							<em>HELP</em>在线帮助<a href="#" title="点击查看更多"><img src="img/more.png" alt="点击查看更多"></a>
-						</h2>
-					</div>
-					<!-- media -->
-					<div class="section fr">
-						<h2 class="more-title">
-							<em>100DU IN THE MEDIA</em>媒体声音<a href="#" title="点击查看更多"><img src="img/more.png" alt="点击查看更多"></a>
-						</h2>
-					</div>
-				</div>
-			</div>
-			<!-- 小块 -->
-			<div class="side-wrap fr">
-				<div class="section-side gradient">
-					<h2 class="more-title">
-						<em>LOAD</em>登陆
-					</h2>
-				</div>
-				<div class="side-ad">
-					<img src="img/ad/ad2.jpg" alt="">
-				</div>
-				<div class="side-ad">
-					<img src="img/ad/ad3.jpg" alt="">
-				</div>
-				<div class="section-side">
-					<h2 class="more-title">
-						<em>COUPONS</em>抢卷儿<a href="#" title="点击查看更多"><img src="img/more.png" alt="点击查看更多"></a>
-					</h2>
-				</div>
-				<div class="section-side">
-					<h2 class="more-title">
-						<em>SHOP</em>今日推荐<a href="#" title="点击查看更多"><img src="img/more.png" alt="点击查看更多"></a>
-					</h2>
-				</div>
-				<div class="section-side">
-					<h2 class="more-title">
-						<em>360o SHOP</em>全景逛店<a href="#" title="点击查看更多"><img src="img/more.png" alt="点击查看更多"></a>
-					</h2>
-				</div>
-				<div class="section-side">
-					<h2 class="more-title">
-						<em>SHOP</em>折扣店<a href="#" title="点击查看更多"><img src="img/more.png" alt="点击查看更多"></a>
-					</h2>
-				</div>
-				<div class="section-side">
-					<h2 class="more-title">
-						<em>COUPONS</em>最新加盟<a href="#" title="点击查看更多"><img src="img/more.png" alt="点击查看更多"></a>
-					</h2>
-				</div>
-			</div>
-		</div>
-		<!-- 尾部 -->
-		<div id="footer" class="gradient"></div>
+<!-- 包裹层 -->
+<div class="wrap">
+<!-- 头部 -->
+<div id="header" class="gradient">
+<!-- 关于标签的选择:尽量选择简单的标签结构。dl、ul适用于标签内容较多的情况 -->
+<p class="city">
+切换城市:
+<a href="#" class="active">北京</a>
+<a href="#">上海</a>
+<a href="#">福州</a>
+<a href="#">广州</a>
+<a href="#">青岛</a>
+</p>
+<p class="link">
+<a href="#" class="join">加盟100度</a>
+|
+<a href="#" class="manage">店铺管理</a>
+</p>
+</div>
+<!-- 导航 -->
+<div id="nav">
+<!-- 左侧导航 -->
+<ul class="nav1">
+<li class="nav-bg-1"><a href="#">美食</a></li>
+<li class="nav-bg-2"><a href="#">夜店</a></li>
+<li class="nav-bg-3"><a href="#">购物</a></li>
+<li class="nav-bg-4"><a href="#">文化</a></li>
+<li class="nav-bg-5"><a href="#">休闲</a></li>
+</ul>
+<!-- logo -->
+<h1><a href="#"><img src="img/logo.png" alt="100度"></a></h1>
+<!-- 右侧导航 -->
+<ul class="nav2 cl">
+<li class="nav-bg-6"><a href="#">烧客空间</a></li>
+<li class="nav-bg-7"><a href="#">知道分子</a></li>
+<li class="nav-bg-8"><a href="#">白吃白拿</a></li>
+<li class="nav-bg-9"><a href="#">烧客论坛</a></li>
+<li class="nav-bg-10"><a href="#">企业俱乐部</a></li>
+</ul>
+</div>
+<!-- 搜索 -->
+<div id="search" class="gradient">
+<ul class="search-tab">
+<li class="active">搜店</li>
+<li class="gradient">地址</li>
+<li class="gradient">优惠券</li>
+<li class="gradient">全文</li>
+<li class="gradient">视频</li>
+</ul>
+<div class="search-bar">
+<img src="img/100du-tag.png" alt="一百度" class="tag">
+<form action="">
+<input type="text" value="例如：荷棠鱼坊烤鱼 或 樱花日本料理" class="text">
+<!-- IE6下不支持h5的image类型的输入框 -->
+<input type="submit" class="btn" value=''>
+</form>
+<div class="hot-search">
+<p><a href="#">金钱豹</a>、<a href="#">大江南</a>、<a href="#">湘水之珠</a>、<a href="#">德瑀楼</a>
+<a href="#">荷棠鱼坊烤鱼</a>、<a href="#">SOHO尚都</a>、<a href="#">湘味楼</a>...</p>
+</div>
+</div>
+<div class="update">
+<div class="update-wrap">
+<ul>
+	<li>
+		<a href="#">
+			<em>萱萱</em>
+			<span>5分钟前</span> 写了一篇新文章：那些灿烂华美的瞬间…</a>
+	</li>
+	<li>
+		<a href="#">
+			<em>熊熊</em>
+			<span>7分钟前</span> 写了一篇新文章：那些灿烂华美的瞬间…</a>
+	</li>
+</ul>
+</div>
+<div class="arrow-wrap fr">
+<div class="arrow a-up-red"></div>
+<div class="arrow a-down-red"></div>
+</div>
+</div>
+</div>
+<!-- 主体 -->
+<div class="cl">
+<!-- 大块 -->
+<div class="main-wrap fl">
+<!-- 热门展示 -->
+<div class="main cl">
+<!-- what hot -->
+<div class="section fl">
+	<h2 class="video-title">WHAT' HOT</h2>
+	<div class="video">
+		<img src="img/video.png" alt="视频模块">
 	</div>
+	<ul class="video-list">
+		<li><a href="#">现场实录:杭州机场国航系统的崩溃</a></li>
+		<li><a href="#">网友自拍国航航班晚点后的遭遇</a></li>
+		<li><a href="#">【拍客】绝对最奢侈的航班&nbsp;注意第41秒</a></li>
+	</ul>
+</div>
+<!-- shop tab -->
+<div class="tab fr">
+	<ul class="slide">
+		<li class="active fl">
+			<h2 class="model-title"><em>HOT SHOP</em>红店铺<a href="javascript:;" class="arrow a-down-red"></a></h2>
+		</li>
+		<li class="gradient fr">
+			<h2 class="model-title"><em>EW SHOP</em>新开张<a href="javascript:;" class="arrow a-down-grey"></a></h2>
+		</li>
+	</ul>
+	<div class="tab-content">
+		<ul class="tab-u" id="t1">
+			<li>
+				<div class="tab-img fl">
+					<img src="img/food.png" alt="国际酒店"/>
+					<img src="img/save.png" alt="节省" class="save"/>
+				</div>
+				<div class="tab-art fl">
+					<a href="#">
+						<h3>御舟和涵珍园国际酒店</h3>
+					</a>
+					<p>区域：朝阳/CBD</p>
+					<p>人均：180元</p>
+					<p>人气：12321</p>
+				</div>
+			</li>
+			<li>
+				<div class="tab-img fl">
+					<img src="img/food.png" alt="国际酒店"/>
+				</div>
+				<div class="tab-art fl">
+					<a href="#">
+						<h3>御舟和涵珍园国际酒店</h3>
+					</a>
+					<p>区域：朝阳/CBD</p>
+					<p>人均：180元</p>
+					<p>人气：12321</p>
+				</div>
+			</li>
+			<li>
+				<div class="tab-img fl">
+					<img src="img/food.png" alt="国际酒店"/>
+				</div>
+				<div class="tab-art fl">
+					<a href="#">
+						<h3>御舟和涵珍园国际酒店</h3>
+					</a>
+					<p>区域：朝阳/CBD</p>
+					<p>人均：180元</p>
+					<p>人气：12321</p>
+				</div>
+			</li>
+		</ul>
+		<div class="more">
+			<img src="img/more.png" alt="查看更多"/>
+		</div>
+	</div>
+</div>
+</div>
+<!-- banner广告1 -->
+<div class="main-ad">
+<img src="img/ad/ad1.jpg" alt="">
+</div>
+<!-- 活动与推荐 -->
+<div class="main cl">
+<!-- 每日活动 -->
+<div class="section fl" id="date">
+	<div class="daily">
+		<span class="en">LUCKY YODAY</span>
+		<h3 class="ch">每日活动</h3>
+		<span class="time">2014.2</span>
+	</div>
+	<div class="cl">
+		<img src="img/show.jpg" alt="今日特价" class="fl">
+		<div class="daily-title fr">
+			<h4><em>07</em><em>21</em><strong>本日主题XXXXXXXX</strong></h4>
+			<p>迟到的荣誉--维米尔的写实主义风俗画迟到的荣誉维米尔的写实主义风俗画迟到的荣誉维米尔的写实主义风</p>
+		</div>
+	</div>
+	<dl class="clen cl">
+		<dt>MON</dt>
+		<dt>TUS</dt>
+		<dt>WED</dt>
+		<dt>THU</dt>
+		<dt>FRI</dt>
+		<dt>SAT</dt>
+		<dt>SUN</dt>
+		<dd class="next-mon">29</dd>
+		<dd class="next-mon">30</dd>
+		<dd>1</dd>
+		<dd>2</dd>
+		<dd>3</dd>
+		<dd>4</dd>
+		<dd>5</dd>
+		<dd>6</dd>
+		<dd>7</dd>
+		<dd>8</dd>
+		<dd>9</dd>
+		<dd>10</dd>
+		<dd>11</dd>
+		<dd>12</dd>
+		<dd>13</dd>
+		<dd>14</dd>
+		<dd>15</dd>
+		<dd>16</dd>
+		<dd id="ac1">17</dd>
+		<dd>18</dd>
+		<dd>19</dd>
+		<dd>20</dd>
+		<dd id="today">21</dd>
+		<dd>22</dd>
+		<dd>23</dd>
+		<dd>24</dd>
+		<dd>25</dd>
+		<dd>26</dd>
+		<dd>27</dd>
+		<dd>28</dd>
+		<dd>29</dd>
+		<dd>30</dd>
+		<dd>31</dd>
+		<dd class="next-mon">1</dd>
+		<dd class="next-mon">2</dd>
+		<dd class="next-mon">3</dd>
+		<dd class="next-mon">4</dd>
+		<dd class="next-mon">5</dd>
+		<dd class="next-mon">6</dd>
+		<dd class="next-mon">7</dd>
+		<dd class="next-mon">8</dd>
+		<dd class="next-mon">9</dd>
+	</dl>
+	<div class="hover-wrap">
+		<div class="hover-info">
+			<img src="img/pizza.jpg" alt="" class="big fl">
+			<div class="hover-content fr">
+				<h3><em>MON</em>本日主题XXXXXXXXX</h3>
+				<p>迟到的荣誉--维米尔的写实主义风俗画迟到的荣誉维米尔</p>
+				<a href="#"><img src="img/go.jpg" alt=""></a>
+			</div>
+			<img src="img/arrow.png" alt="" class="arrow">
+		</div>
+	</div>
+</div>
+<!-- 精彩推荐 -->
+<div class="section fr" id="recom">
+	<div class="daily">
+		<span class="en">RECOMMEND</span>
+		<h3 class="ch">精彩推荐</h3>
+	</div>
+	<div class="slider-wrap cl">
+			<ul class="big-slider fl">
+				<li class="active">
+					<a href="#"><img src="img/slide/p1.png" alt="" ></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/slide/p2.png" alt=""></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/slide/p3.png" alt=""></a>
+				</li>
+			</ul>
+			<ul class="tab-slider fr">
+				<li class="active">
+					<a href="javascript:;">
+						<img src="img/slide/p1.png" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/slide/p2.png" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="img/slide/p3.png" alt="">
+					</a>
+				</li>
+			</ul>
+			<ul class="slider-text">
+				<li>爸爸去哪儿~</li>
+				<li>新帽纸</li>
+				<li>大美女</li>
+			</ul>
+	</div>
+	<ul class="news-list">
+		<li>
+			<em><img src="img/ico1.gif" alt=""></em>
+			<a href="#">老店换新颜，丰泽原野田重张亮相...</a><span>08/07/22</span>
+		</li>
+		<li>
+			<em><img src="img/ico2.gif" alt=""></em>
+			<a href="#">生活中有哪些商品的包装有缺陷野田...</a><span>08/07/22</span>
+		</li>
+		<li>
+			<em><img src="img/ico1.gif" alt=""></em>
+			<a href="#">老店换新颜，丰泽原野田重张亮相...</a><span>08/07/22</span>
+		</li>
+		<li>
+			<em><img src="img/ico2.gif" alt=""></em>
+			<a href="#">生活中有哪些商品的包装有缺陷野田...</a><span>08/07/22</span>
+		</li>
+		<li>
+			<em><img src="img/ico1.gif" alt=""></em>
+			<a href="#">老店换新颜，丰泽原野田重张亮相...</a><span>08/07/22</span>
+		</li>
+		<li>
+			<em><img src="img/ico2.gif" alt=""></em>
+			<a href="#">生活中有哪些商品的包装有缺陷野田...</a><span>08/07/22</span>
+		</li>
+		<li>
+			<em><img src="img/ico1.gif" alt=""></em>
+			<a href="#">老店换新颜，丰泽原野田重张亮相...</a><span>08/07/22</span>
+		</li>
+		<li>
+			<em><img src="img/ico2.gif" alt=""></em>
+			<a href="#">生活中有哪些商品的包装有缺陷野田...</a><span>08/07/22</span>
+		</li>
+	</ul>
+</div>
+</div>
+<!-- subway map bbs -->
+<div class="main cl">
+<!-- subway map tab -->
+<div class="tab fl">
+	<ul class="slide">
+		<li class="active fl">
+			<h2 class="model-title"><em>SUBWAY</em>地铁交通<a href="javascript:;" class="arrow a-down-red"></a></h2>
+		</li>
+		<li class="gradient fr">
+			<h2 class="model-title"><em>MAP</em>生活圈<a href="javascript:;" class="arrow a-down-grey"></a></h2>
+		</li>
+	</ul>
+	<div class="tab-content">
+		<img src="img/map.png" alt="地铁交通">
+	</div>
+</div>
+<!-- bbs -->
+<div class="section fr bbs">
+	<h2 class="more-title">
+		<em>BBS</em>论坛<a href="#" title="点击查看更多"><img src="img/more.png" alt="点击查看更多"></a>
+	</h2>
+	<ul class="bbs-list">
+		<li>
+			<div class="normal-list">
+				<em>01</em><a href="#">保你没见过的古怪餐厅</a><span>08/07/22</span>
+			</div>
+			<div class="hover-list">
+				<img src="img/women.jpg" alt="">
+				<h4>画皮之--日剧中的手机</h4>
+				<p>阿瑞斯</p>
+				<strong>ONE</strong>
+			</div>
+		</li>
+		<li>
+			<div class="normal-list ev">
+				<em>02</em><a href="#">保你没见过的古怪餐厅</a><span>08/07/22</span>
+			</div>
+			<div class="hover-list">
+				<img src="img/women.jpg" alt="">
+				<h4>画皮之--日剧中的手机</h4>
+				<p>阿瑞斯</p>
+				<strong>TWO</strong>
+			</div>
+		</li>
+		<li>
+			<div class="normal-list">
+				<em>03</em><a href="#">保你没见过的古怪餐厅</a><span>08/07/22</span>
+			</div>
+			<div class="hover-list">
+				<img src="img/women.jpg" alt="">
+				<h4>画皮之--日剧中的手机</h4>
+				<p>阿瑞斯</p>
+				<strong>THREE</strong>
+			</div>
+		</li>
+		<li>
+			<div class="normal-list ev">
+				<em>04</em><a href="#">保你没见过的古怪餐厅</a><span>08/07/22</span>
+			</div>
+			<div class="hover-list">
+				<img src="img/women.jpg" alt="">
+				<h4>画皮之--日剧中的手机</h4>
+				<p>阿瑞斯</p>
+				<strong>FOUR</strong>
+			</div>
+		</li>
+		<li>
+			<div class="normal-list">
+				<em>05</em><a href="#">保你没见过的古怪餐厅</a><span>08/07/22</span>
+			</div>
+			<div class="hover-list">
+				<img src="img/women.jpg" alt="">
+				<h4>画皮之--日剧中的手机</h4>
+				<p>阿瑞斯</p>
+				<strong>FIVE</strong>
+			</div>
+		</li>
+		<li>
+			<div class="normal-list ev">
+				<em>06</em><a href="#">保你没见过的古怪餐厅</a><span>08/07/22</span>
+			</div>
+			<div class="hover-list">
+				<img src="img/women.jpg" alt="">
+				<h4>画皮之--日剧中的手机</h4>
+				<p>阿瑞斯</p>
+				<strong>SIX</strong>
+			</div>
+		</li>
+		<li>
+			<div class="normal-list">
+				<em>07</em><a href="#">保你没见过的古怪餐厅</a><span>08/07/22</span>
+			</div>
+			<div class="hover-list">
+				<img src="img/women.jpg" alt="">
+				<h4>画皮之--日剧中的手机</h4>
+				<p>阿瑞斯</p>
+				<strong>SEVEN</strong>
+			</div>
+		</li>
+	</ul>
+</div>
+</div>
+<!-- banner广告2 -->
+<div class="main-ad">
+<img src="img/ad/ad1.jpg" alt="">
+</div>
+<!-- 知道分子，红人 -->
+<div class="main cl">
+<!-- 知道分子 -->
+<div class="section fl">
+	<h2 class="more-title">
+		<em>LIFESTYLE ADVICE</em>知道分子<a href="#" title="点击查看更多"><img src="img/more.png" alt="点击查看更多"></a>
+	</h2>
+	<div class="model-tab">
+		<ul class="cl">
+			<li class="active">
+				有人在问
+				<div class="arrow a-down-red"></div>
+			</li>
+			<li class="gradient">
+				有人知道
+				<div class="arrow a-down-grey"></div>
+			</li>
+			<li class="gradient">
+				热门问题
+				<div class="arrow a-down-grey"></div>
+			</li>
+		</ul>
+		<span class="line"></span>
+	</div>
+	<div class="main-tab-content">
+		<h3><span class="title">标&nbsp;&nbsp;&nbsp;&nbsp;题</span><span class="status">状态</span></h3>
+		<ul class="i-know">
+			<li class="ok">
+				<em>[<span>美食</span>]</em>
+				<a href="#">推荐几款性价比比较好的冰箱...</a>
+			</li>
+			<li class="stop">
+				<em>[<span>购物</span>]</em>
+				<a href="#">生活中哪些商品的包装有缺陷</a>
+			</li>
+			<li class="stop">
+				<em>[<span>休闲</span>]</em>
+				<a href="#">为什么我第一次进入保姆和宠物</a>
+			</li>
+			<li class="ok">
+				<em>[<span>美食</span>]</em>
+				<a href="#">推荐几款性价比比较好的冰箱...</a>
+			</li>
+			<li class="stop">
+				<em>[<span>购物</span>]</em>
+				<a href="#">生活中哪些商品的包装有缺陷</a>
+			</li>
+		</ul>
+		<div class="tab-search-wrap cl">
+			<h4 class="tab-search fl">搜搜谁知道：</h4>
+			<form action="" class="tab-select">
+				<input type="text" value="请输入关键字"  class="tab-input fl"/>
+				<input type="submit" class="tab-go fl" value="">
+			</form>
+		</div>
+	</div>
+</div>
+<!-- 红人 -->
+<div class="section fr">
+	<h2 class="more-title">
+		<em>HOT</em>红人烧客<a href="#" title="点击查看更多"><img src="img/more.png" alt="点击查看更多"></a>
+	</h2>
+	<div class="hot-img-wrap cl">
+		<div class="hot-title">
+			<h4>HOT</h4>
+			<p>潮流服饰</p>
+			<p>任我行</p>
+		</div>
+		<div class="box">
+			<a href="#"><img src="img/hot/p1.jpg" alt="">
+			<div class="mark">
+				<p>
+					用户名:id1<br>
+					区域:朝阳<br>
+					人气:12.4万
+				</p>
+			</div>
+			</a>		
+		</div>
+		<div class="box big">
+			<a href="#"><img src="img/hot/p2.jpg" alt="">
+			<div class="mark">
+				<p>
+					用户名:性感宝贝<br>
+					区域:朝阳<br>
+					人气:12.4万
+				</p>
+			</div>
+			</a>		
+		</div>
+		<div class="box">
+			<a href="#"><img src="img/hot/p3.jpg" alt="">
+			<div class="mark">
+				<p>
+					用户名:id2<br>
+					区域:朝阳<br>
+					人气:124867
+				</p>
+			</div>
+			</a>		
+		</div>
+		<div class="box">
+			<a href="#"><img src="img/hot/p4.jpg" alt="">
+			<div class="mark">
+				<p>
+					用户名:id2<br>
+					区域:朝阳<br>
+					人气:12.4万
+				</p>
+			</div>
+			</a>		
+		</div>
+		<div class="box">
+			<a href="#"><img src="img/hot/p5.jpg" alt="">
+			<div class="mark">
+				<p>
+					用户名:id2<br>
+					区域:朝阳<br>
+					人气:12.4万
+				</p>
+			</div>
+			</a>		
+		</div>
+		<div class="box">
+			<a href="#"><img src="img/hot/p6.jpg" alt="">
+			<div class="mark">
+				<p>
+					用户名:id2<br>
+					区域:朝阳<br>
+					人气:12.4万
+				</p>
+			</div>
+			</a>		
+		</div>
+		<div class="box">
+			<a href="#"><img src="img/hot/p7.jpg" alt="">
+			<div class="mark">
+				<p>
+					用户名:id2<br>
+					区域:朝阳<br>
+					人气:12.4万
+				</p>
+			</div>
+			</a>		
+		</div>
+		<div class="box">
+			<a href="#"><img src="img/hot/p8.jpg" alt="">
+			<div class="mark">
+				<p>
+					用户名:id2<br>
+					区域:朝阳<br>
+					人气:12.4万
+				</p>
+			</div>
+			</a>		
+		</div>
+		<div class="box">
+			<a href="#"><img src="img/hot/p9.jpg" alt="">
+			<div class="mark">
+				<p>
+					用户名:id2<br>
+					区域:朝阳<br>
+					人气:12.4万
+				</p>
+			</div>
+			</a>		
+		</div>
+		<div class="box">
+			<a href="#"><img src="img/hot/p10.jpg" alt="">
+			<div class="mark">
+				<p>
+					用户名:id2<br>
+					区域:朝阳<br>
+					人气:12.4万
+				</p>
+			</div>
+			</a>		
+		</div>
+	</div>
+</div>
+</div>
+<!-- help and media -->
+<div class="main cl">
+<!-- help -->
+<div class="section fl">
+	<h2 class="more-title">
+		<em>HELP</em>在线帮助
+	</h2>
+	<div class="connect-wrap">
+		<p>您有任何问题，都可以通过全国免费电话，或MSN在线客服与我们联系!</p>
+		<img src="img/phone.png" alt="" class="fl">
+		<img src="img/email.png" alt="" class="fr">
+	</div>
+	<div class="help-dital-wrap cl">
+		<div class="dital fl" id="userHelp">
+			<h4>用户帮助</h4>
+			<ul class="help-dital-list">
+				<li>
+					<a href="#">金币是什么</a>
+				</li>
+				<li>
+					<a href="#">怎样查看我的等级</a>
+				</li>
+				<li>
+					<a href="#">怎么赚积分</a>
+				</li>
+			</ul>
+		</div>
+		<div class="dital fr" id="bzHelp">
+			<h4>商户帮助</h4>
+			<ul class="help-dital-list">
+				<li>
+					<a href="#">如何成为明星用户</a>
+				</li>
+				<li>
+					<a href="#">邮件推广</a>
+				</li>
+				<li>
+					<a href="#">论坛推广方法</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- media -->
+<div class="section fr media-section">
+	<h2 class="more-title">
+		<em>100DU IN THE MEDIA</em>媒体声音<a href="#" title="点击查看更多"><img src="img/more.png" alt="点击查看更多"></a>
+	</h2>
+	<ul class="media-wrap">
+		<li>
+			<img src="img/logo/media1.png" alt="" class="fl">
+			<a href="#" class="fr">日本最大的财经杂志《钻石周刊》对100度享乐网的报道</a>
+		</li>
+		<li>
+			<img src="img/logo/media2.png" alt="" class="fl">
+			<a href="#" class="fr">视频网站100度享乐网获网络视听许可证</a>
+		</li>
+		<li>
+			<img src="img/logo/media3.png" alt="" class="fl">
+			<a href="#" class="fr">互联网上的视频橱窗</a>
+		</li>
+		<li>
+			<img src="img/logo/media4.png" alt="" class="fl">
+			<a href="#" class="fr">享乐主义的机会</a>
+		</li>
+	</ul>
+</div>
+</div>
+</div>
+<!-- 小块 -->
+<div class="side-wrap fr">
+<div class="section-side gradient">
+<h2 class="more-title">
+	<em>LOAD</em>登陆
+</h2>
+</div>
+<div class="side-ad">
+<img src="img/ad/ad2.jpg" alt="">
+</div>
+<div class="side-ad">
+<img src="img/ad/ad3.jpg" alt="">
+</div>
+<div class="section-side">
+<h2 class="more-title">
+	<em>COUPONS</em>抢卷儿<a href="#" title="点击查看更多"><img src="img/more.png" alt="点击查看更多"></a>
+</h2>
+<div class="model-tab side-tab">
+	<ul class="cl">
+		<li class="active">
+			人气
+			<div class="arrow a-down-red"></div>
+		</li>
+		<li class="gradient">
+			推荐
+			<div class="arrow a-down-grey"></div>
+		</li>
+		<li class="gradient">
+			最新
+			<div class="arrow a-down-grey"></div>
+		</li>
+	</ul>
+	<span class="line"></span>
+</div>
+</div>
+<div class="section-side">
+<h2 class="more-title">
+	<em>SHOP</em>今日推荐<a href="#" title="点击查看更多"><img src="img/more.png" alt="点击查看更多"></a>
+</h2>
+</div>
+<div class="section-side">
+<h2 class="more-title">
+	<em>360o SHOP</em>全景逛店<a href="#" title="点击查看更多"><img src="img/more.png" alt="点击查看更多"></a>
+</h2>
+</div>
+<div class="section-side">
+<h2 class="more-title">
+	<em>SHOP</em>折扣店<a href="#" title="点击查看更多"><img src="img/more.png" alt="点击查看更多"></a>
+</h2>
+</div>
+<div class="section-side">
+<h2 class="more-title">
+	<em>COUPONS</em>最新加盟<a href="#" title="点击查看更多"><img src="img/more.png" alt="点击查看更多"></a>
+</h2>
+</div>
+</div>
+</div>
+<!-- 尾部 -->
+<div id="footer" class="gradient"></div>
+</div>
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 </body>
 </html>
