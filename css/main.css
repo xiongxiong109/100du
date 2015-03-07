@@ -135,8 +135,9 @@ IE6-7下margin-bottom失效的问题:
 
 /*update*/
 .update{width: 408px;height: 33px;position: absolute;bottom: 0;left: 224px;background: url("../img/update.png") 0px 10px no-repeat;}
-.update .update-wrap{height: 33px;overflow: hidden;float: left;}
-.update .update-wrap ul li{width: 338px;height: 33px;line-height: 33px;padding-left: 60px;}
+.update .update-wrap{position:relative;width: 98%;height:23px;top:5px;overflow: hidden;float: left;}
+.update .update-wrap ul{position: absolute;width: 100%;}
+.update .update-wrap ul li{width: 338px;height: 23px;line-height: 23px;padding-left: 60px;}
 .update .update-wrap ul li a{color: #000;}
 .update .update-wrap ul li a:hover{text-decoration: underline;}
 .update .update-wrap ul li a em{color: #d30703;}

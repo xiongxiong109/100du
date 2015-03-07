@@ -64,7 +64,7 @@
 <div class="search-bar">
 <img src="img/100du-tag.png" alt="一百度" class="tag">
 <form action="">
-<input type="text" value="例如：荷棠鱼坊烤鱼 或 樱花日本料理" class="text">
+<input type="text" value="例如：荷棠鱼坊烤鱼 或 樱花日本料理" class="text" id="searchText">
 <!-- IE6下不支持h5的image类型的输入框 -->
 <input type="submit" class="btn" value=''>
 </form>
@@ -75,7 +75,7 @@
 </div>
 <div class="update">
 <div class="update-wrap">
-<ul>
+<ul id="updateUl">
 	<li>
 		<a href="#">
 			<em>萱萱</em>
@@ -89,8 +89,8 @@
 </ul>
 </div>
 <div class="arrow-wrap fr">
-<div class="arrow a-up-red"></div>
-<div class="arrow a-down-red"></div>
+<div class="arrow a-up-red" id="arrowUp"></div>
+<div class="arrow a-down-red" id="arrowDown"></div>
 </div>
 </div>
 </div>
@@ -344,7 +344,7 @@
 		</li>
 	</ul>
 	<div class="tab-content">
-		<img src="img/map.png" alt="地铁交通">
+		<img src="img/content/map.png" alt="地铁交通">
 	</div>
 </div>
 <!-- bbs -->
@@ -984,5 +984,6 @@
 </div>
 </div>
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
