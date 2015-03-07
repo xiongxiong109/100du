@@ -169,8 +169,9 @@ li .model-title{_padding-top:6px;}
 .tab-content .tab-u li a{color: #bb0d0d;}
 .tab-content .tab-u li a:hover{text-decoration: underline;}
 
+#topTab{height: 375px;position: relative;top: -1px;}
 /*more*/
-.more{text-align: right;height: 34px;line-height: 34px;+height:24px;+line-height:24px;}
+.more{width: 39px;height: 17px;position: absolute;bottom: 10px;right: 15px;}
 .more img{vertical-align: bottom;}
 .more-title{height: 30px;line-height: 30px;position:relative;_top:5px;}
 .more-title a{position:absolute;right:0px;}
@@ -237,7 +238,7 @@ li .model-title{_padding-top:6px;}
 
 /*bbs-list*/
 .bbs{height: 298px;}
-.bbs-list li{border-radius: 2px;}
+.bbs-list li{border-radius: 4px;}
 .normal-list{position: relative;width: 100%;height: 30px;}
 .normal-list{background-color:#f8f8f8;margin-bottom: 4px;}
 .ev{background-color:#f1f1f1;}
@@ -316,5 +317,34 @@ left: 10px;font-size: 14px;}
 .media-wrap li img{width: 90px;}
 .media-wrap li a{color: #292929;padding-left: 12px;display:block;width: 218px;font-size: 12px;}
 .media-wrap li a:hover{text-decoration: underline;}
+
+/*登录模块*/
+#loginTitle{border-radius:5px 5px 0 0;margin-bottom: 0px;}
+.login-wrap{background-color: #fff;border: 1px solid #e5e5e5;border-radius: 0px 0px 5px 5px;border-top: none;}
+#login{padding:15px 0px 10px 0;width: 215px;margin: 0 auto;border-bottom: 1px solid #e5e5e5;}
+#login li{margin-bottom: 7px;}
+#login li span{color: #595959;font-size: 12px;word-spacing: 7px;float: left;width: 58px;}
+.user-input{width: 87px;height: 17px;border: 1px solid #e5e5e5;background-color: #f7f7f7;float: left;}
+#remember{color: #595959;font-size: 12px;margin-left:7px;float: left;}
+#login #smt{border: 0px;background: url("../img/login.png") 0px 0px no-repeat;width: 55px;height: 24px;float:left;margin-left: 7px;}
+.login-link-wrap{width: 100%;height: 32px;line-height: 32px;}
+.login-link-wrap a{color: #666666;font-size: 12px;background: url("../img/list-dot.png") 19px 16px no-repeat;}
+.login-link-wrap a.fl{padding-left: 25px;}
+.login-link-wrap a.fr{padding:0px 25px;}
+.login-link-wrap a:hover{text-decoration: underline;}
+
+/*侧边栏选项卡*/
+.side-tab-title{width: 100%;height: 21px;position: relative;color: #999999;font-weight: normal;font-size: 12px;border-bottom: 1px dotted #cbcbca;}
+.side-tab-title span{position: absolute;}
+.shop-name{left: 47px;}
+.side-save{right: 56px;}
+.print{right: 12px;}
+#sideTabUl{padding-bottom: 4px;}
+#sideTabUl li{width: 100%;height: 27px;line-height: 27px;border-bottom: 1px dotted #cdcdcd;}
+#sideTabUl li a{display:inline-block;padding:0 42px 0 15px;background: url("../img/list-dot.png") 7px 12px no-repeat;color: #333333;font-size: 12px;}
+#sideTabUl li a:hover{text-decoration: underline;}
+#sideTabUl li .save-detail{padding-right: 10px;color: #d80000;}
+#sideTabUl li .print-detail{color: #999999;}
+#sideTabUl .last-li{border-bottom: 0px;}
 
 
