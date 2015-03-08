@@ -79,45 +79,28 @@
 			});
 			$("#updateUl").css('height',oLis.length*oLis.height());
 			//无缝滚动
-			var iCur=0;
-			var oTop;
 			$("#arrowDown").on('click',function(){
-				iCur++;
-				oTop=$("#updateUl").position().top;
-				if( Math.abs(oTop)==oLis.height()*(oLis.length-1) ){
-					//顺序滚动到最后一个
+				var top=$("#updateUl").position().top;
+				if(Math.abs(top)>=arr[arr.length-1]){
 					oLis.eq(0).css("top",oLis.length*oLis.height());
-				}else if( Math.abs(oTop)==$("#updateUl" ).height()){
-					oLis.eq(0).css("top",0);
-					$("#updateUl").css("top",0);
-					iCur=1;
-				}
-				$("#updateUl").stop().animate({"top" : -oLis.height()*iCur},400,'swing');
-				//修复快速点击时ul消失的bug
-				if( Math.abs(oTop) >$("#updateUl").height() ){
-					$("#updateUl").css("top",0);
-					iCur=1;
+					$("#updateUl").stop().animate({"top":top-oLis.height()},function(){
+						$("#updateUl").css("top",0);
+						oLis.eq(0).css("top",arr[0]);
+					});
+				}else{
+					$("#updateUl").stop().animate({"top":top-oLis.height()});
 				}
 			});
 			$("#arrowUp").on('click',function(){
-				iCur--;
-				oTop=$("#updateUl").position().top;
-				if(oTop==0){
-					//顺序滚动到第一个
-					oLis.eq( oLis.length-1 ).css("top",-oLis.height() );
-					$("#updateUl").stop().animate({"top" : -oLis.height()*iCur},400,'swing',function(){
-						$("#updateUl").css("top",-(oLis.length-1)*oLis.height());
-						oLis.eq( oLis.length-1 ).css("top",arr[oLis.length-1]);
-						iCur=oLis.length-1;
+				var top=$("#updateUl").position().top;
+				if(top>=0){
+					oLis.eq(oLis.length-1).css("top",-oLis.height());
+					$("#updateUl").stop().animate({"top":top+oLis.height()},function(){
+						oLis.eq(oLis.length-1).css("top",arr[arr.length-1]);
+						$("#updateUl").css("top",-arr[arr.length-1]);
 					});
 				}else{
-					$("#updateUl").stop().animate({"top" : -oLis.height()*iCur},400,'swing');
-				}
-				// 修复BUG
-				if(oTop>0){
-					$("#updateUl").css("top",-(oLis.length-1)*oLis.height());
-					oLis.eq( oLis.length-1 ).css("top",arr[oLis.length-1]);
-					iCur=oLis.length-1;
+					$("#updateUl").stop().animate({"top":top+oLis.height()});
 				}
 			});
 			var timer=null;
