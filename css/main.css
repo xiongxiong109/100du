@@ -61,7 +61,7 @@ IE6-7下margin-bottom失效的问题:
 .tab .slide {overflow: hidden;zoom: 1;}
 .tab .slide li{cursor: pointer;position:relative;z-index:2;font-size: 12px;height: 33px;line-height:33px;text-align: center;width: 172px;border: 1px solid #e5e5e5;-webkit-border-radius: 6px 6px 0 0;-moz-border-radius: 6px 6px 0 0;border-radius: 6px 6px 0 0;border-bottom:none;}
 .tab .slide li.active{background-color: #fff;height: 34px;}
-.tab .tab-content{position: absolute;z-index: 1;top:17px;left: 0px;width: 320px;border: 1px solid #e5e5e5;-webkit-border-radius: 0 0 6px 6px;-moz-border-radius: 0 0 6px 6px;border-radius: 0 0 6px 6px;}
+.tab .tab-content{position: absolute;z-index: 1;top:34px;left: 0px;width: 320px;border: 1px solid #e5e5e5;-webkit-border-radius: 0 0 6px 6px;-moz-border-radius: 0 0 6px 6px;border-radius: 0 0 6px 6px;}
 .tab-content{padding: 0 15px;}
 /*header*/
 /*使用line-height在ie6下不起作用诶*/
@@ -162,23 +162,24 @@ li .model-title{_padding-top:6px;}
 /*tab*/
 .tab-content .tab-u li{width: 318px;height: 110px;background: url("../img/hot.png") 100% 10px no-repeat;}
 .tab-img,.tab-art{padding: 10px 0;}
-.tab-content .tab-u .tab-img{position: relative;}
+.tab-content .tab-u .tab-img{position: relative;width: 105px;}
 .tab-img .save{position: absolute;bottom:-5px;right: -5px;}
 .tab-content .tab-u .tab-art{padding-left: 20px;}
 .tab-content .tab-u .tab-art h3{padding-bottom: 12px;font-size: 12px;}
 .tab-content .tab-u .tab-art p{color: #6e6e6e;line-height: 17px;} 
 .tab-content .tab-u li a{color: #bb0d0d;}
 .tab-content .tab-u li a:hover{text-decoration: underline;}
-
-#topTab{height: 375px;position: relative;top: -1px;}
+#topTab1,#topTab2{height: 386px;position: relative;top: -1px;}
+#topTab2{display: none;}
+#mapContent{display: none;}
 /*more*/
 .more{width: 39px;height: 17px;position: absolute;bottom: 10px;right: 15px;}
 .more img{vertical-align: bottom;}
 .more-title{height: 30px;line-height: 30px;position:relative;_top:5px;}
 .more-title a{position:absolute;right:0px;}
 .more-title a img{vertical-align: middle;}
-.main .tab{height: 300px;}
-.main .tab .tab-content{padding:10px 15px 0px;}
+.main .tab{height: 310px;}
+.main .tab .tab-content{padding:0px 15px 0px;}
 
 /*calendar*/
 #date{background: url("../img/calendar.jpg") top center no-repeat;}
@@ -201,8 +202,8 @@ li .model-title{_padding-top:6px;}
 .clen dd#today{background:url("../img/show-min.jpg") 0px 0px no-repeat;}
 .clen dd#ac1{background:url("../img/pizza-min.jpg") 0px 0px no-repeat;}
 /*鼠标移入显示内容*/
-.hover-wrap{display: none;width: 318px;height: 108px;border: 1px solid #c0c0c0;box-shadow: 4px 4px 1px #bfbfbf;}
-.hover-info{padding: 10px 15px;position: relative;}
+.hover-wrap{display: none;position: absolute;z-index: 99;width: 318px;height: 108px;border: 1px solid #c0c0c0;box-shadow: 4px 4px 1px #bfbfbf;background: #fff;}
+.hover-info{padding: 10px 15px;position: relative;background-color: #fff;}
 .hover-info .big{border: 2px solid #dddddd;}
 .hover-info h3{color: #333333;font-size: 10px;}
 .hover-info h3 em{font-size: 16px;color: #cccccc;padding-right: 7px;}
@@ -238,7 +239,7 @@ li .model-title{_padding-top:6px;}
 .news-list li span{font-size: 10px;color: #999999;position: absolute;right: 0;}
 
 /*bbs-list*/
-.bbs{height: 298px;}
+.bbs{height: 305px;}
 .bbs-list li{border-radius: 4px;}
 .normal-list{position: relative;width: 100%;height: 30px;}
 .normal-list{background-color:#f8f8f8;margin-bottom: 4px;}
@@ -268,6 +269,7 @@ li .model-title{_padding-top:6px;}
 .main-tab-content h3{width: 100%;height: 19px;line-height: 19px;color: #999999;font-weight: normal;font-size: 12px;position: relative;border-bottom: 1px dotted #cbcbca;}
 .main-tab-content .title{position: absolute;left: 116px;}
 .main-tab-content .status{position: absolute;right: 16px;}
+.iknow-wrap{width: 318px;height: 156px;overflow: hidden;zoom: 1;}
 .i-know{padding-bottom: 16px;}
 .i-know li{width: 100%;height: 27px;line-height: 27px;position: relative;border-bottom: 1px dotted #cbcbca;}
 .i-know .ok{background:url("../img/tab-bg-sp.png") 283px 8px no-repeat;}
@@ -340,13 +342,14 @@ left: 10px;font-size: 14px;}
 .shop-name{left: 47px;}
 .side-save{right: 56px;}
 .print{right: 12px;}
-#sideTabUl{padding-bottom: 4px;}
-#sideTabUl li{width: 100%;height: 27px;line-height: 27px;border-bottom: 1px dotted #cdcdcd;}
-#sideTabUl li a{display:inline-block;padding:0 42px 0 15px;background: url("../img/list-dot.png") 7px 12px no-repeat;color: #333333;font-size: 12px;}
-#sideTabUl li a:hover{text-decoration: underline;}
-#sideTabUl li .save-detail{padding-right: 10px;color: #d80000;}
-#sideTabUl li .print-detail{color: #999999;}
-#sideTabUl .last-li{border-bottom: 0px;}
+.sideUl-wrap{width: 216px;height: 143px;overflow: hidden;zoom: 1;}
+.sideTabUl{padding-bottom: 4px;}
+.sideTabUl li{width: 100%;height: 27px;line-height: 27px;border-bottom: 1px dotted #cdcdcd;}
+.sideTabUl li a{display:inline-block;padding:0 42px 0 15px;background: url("../img/list-dot.png") 7px 12px no-repeat;color: #333333;font-size: 12px;}
+.sideTabUl li a:hover{text-decoration: underline;}
+.sideTabUl li .save-detail{padding-right: 10px;color: #d80000;}
+.sideTabUl li .print-detail{color: #999999;}
+.sideTabUl .last-li{border-bottom: 0px;}
 
 /*今日推荐*/
 .shop-today{height: 418px;+height: 420px;}
@@ -367,6 +370,7 @@ left: 10px;font-size: 14px;}
 li.last-list{border-bottom: none;}
 
 /*最新加盟*/
+#joinPart{height: 358px;}
 .join-wrap{width: 100%;}
 .join-wrap .recoToday{width: 100px;;position: relative;}
 .join-wrap .recoToday li{width: 100%;height: 150px;}

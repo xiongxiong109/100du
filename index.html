@@ -113,8 +113,8 @@
 	</ul>
 </div>
 <!-- shop tab -->
-<div class="tab fr">
-	<ul class="slide">
+<div class="tab fr" id="tCon1">
+	<ul class="slide" id="tab1">
 		<li class="active fl">
 			<h2 class="model-title"><em>HOT SHOP</em>红店铺<a href="javascript:;" class="arrow a-down-red"></a></h2>
 		</li>
@@ -122,7 +122,7 @@
 			<h2 class="model-title"><em>EW SHOP</em>新开张<a href="javascript:;" class="arrow a-down-grey"></a></h2>
 		</li>
 	</ul>
-	<div class="tab-content" id="topTab">
+	<div class="tab-content" id="topTab1">
 		<ul class="tab-u" id="t1">
 			<li>
 				<div class="tab-img fl">
@@ -158,6 +158,53 @@
 				<div class="tab-art fl">
 					<a href="#">
 						<h3>御舟和涵珍园国际酒店</h3>
+					</a>
+					<p>区域：朝阳/CBD</p>
+					<p>人均：180元</p>
+					<p>人气：12321</p>
+				</div>
+			</li>
+		</ul>
+		<div class="more">
+			<img src="img/more.png" alt="查看更多"/>
+		</div>
+	</div>
+	<div class="tab-content" id="topTab2">
+		<ul class="tab-u" id="t1">
+			<li>
+				<div class="tab-img fl">
+					<img src="img/pizza.jpg" alt="国际酒店"/>
+					<img src="img/save.png" alt="节省" class="save"/>
+				</div>
+				<div class="tab-art fl">
+					<a href="#">
+						<h3>和涵珍园御舟国际酒店</h3>
+					</a>
+					<p>区域：朝阳/CBD</p>
+					<p>人均：180元</p>
+					<p>人气：12321</p>
+				</div>
+			</li>
+			<li>
+				<div class="tab-img fl">
+					<img src="img/pizza.jpg" alt="国际酒店"/>
+				</div>
+				<div class="tab-art fl">
+					<a href="#">
+						<h3>和涵珍园御舟国际酒店</h3>
+					</a>
+					<p>区域：朝阳/CBD</p>
+					<p>人均：180元</p>
+					<p>人气：12321</p>
+				</div>
+			</li>
+			<li>
+				<div class="tab-img fl">
+					<img src="img/pizza.jpg" alt="国际酒店"/>
+				</div>
+				<div class="tab-art fl">
+					<a href="#">
+						<h3>和涵珍园御舟国际酒店</h3>
 					</a>
 					<p>区域：朝阳/CBD</p>
 					<p>人均：180元</p>
@@ -217,11 +264,11 @@
 		<dd>14</dd>
 		<dd>15</dd>
 		<dd>16</dd>
-		<dd id="ac1">17</dd>
+		<dd id="ac1" class="todo">17</dd>
 		<dd>18</dd>
 		<dd>19</dd>
 		<dd>20</dd>
-		<dd id="today">21</dd>
+		<dd id="today" class="todo">21</dd>
 		<dd>22</dd>
 		<dd>23</dd>
 		<dd>24</dd>
@@ -334,7 +381,7 @@
 <!-- subway map bbs -->
 <div class="main cl">
 <!-- subway map tab -->
-<div class="tab fl">
+<div class="tab fl" id="tab2">
 	<ul class="slide">
 		<li class="active fl">
 			<h2 class="model-title"><em>SUBWAY</em>地铁交通<a href="javascript:;" class="arrow a-down-red"></a></h2>
@@ -345,6 +392,9 @@
 	</ul>
 	<div class="tab-content">
 		<img src="img/content/map.png" alt="地铁交通">
+	</div>
+	<div class="tab-content" id="mapContent">
+		<img src="img/content/456.jpg" alt="生活map">
 	</div>
 </div>
 <!-- bbs -->
@@ -440,12 +490,12 @@
 <!-- 知道分子，红人 -->
 <div class="main cl">
 <!-- 知道分子 -->
-<div class="section fl">
+<div class="section fl" id="knowWrap">
 	<h2 class="more-title">
 		<em>LIFESTYLE ADVICE</em>知道分子<a href="#" title="点击查看更多"><img src="img/more.png" alt="点击查看更多"></a>
 	</h2>
 	<div class="model-tab">
-		<ul class="cl">
+		<ul class="cl" id="knowTab">
 			<li class="active">
 				有人在问
 				<div class="arrow a-down-red"></div>
@@ -463,28 +513,74 @@
 	</div>
 	<div class="main-tab-content">
 		<h3><span class="title">标&nbsp;&nbsp;&nbsp;&nbsp;题</span><span class="status">状态</span></h3>
-		<ul class="i-know">
-			<li class="ok">
-				<em>[<span>美食</span>]</em>
-				<a href="#">推荐几款性价比比较好的冰箱...</a>
-			</li>
-			<li class="stop">
-				<em>[<span>购物</span>]</em>
-				<a href="#">生活中哪些商品的包装有缺陷</a>
-			</li>
-			<li class="stop">
-				<em>[<span>休闲</span>]</em>
-				<a href="#">为什么我第一次进入保姆和宠物</a>
-			</li>
-			<li class="ok">
-				<em>[<span>美食</span>]</em>
-				<a href="#">推荐几款性价比比较好的冰箱...</a>
-			</li>
-			<li class="stop">
-				<em>[<span>购物</span>]</em>
-				<a href="#">生活中哪些商品的包装有缺陷</a>
-			</li>
-		</ul>
+		<div class="iknow-wrap">
+			<ul class="i-know">
+				<li class="ok">
+					<em>[<span>美食</span>]</em>
+					<a href="#">推荐几款性价比比较好的冰箱...</a>
+				</li>
+				<li class="stop">
+					<em>[<span>购物</span>]</em>
+					<a href="#">生活中哪些商品的包装有缺陷</a>
+				</li>
+				<li class="stop">
+					<em>[<span>休闲</span>]</em>
+					<a href="#">为什么我第一次进入保姆和宠物</a>
+				</li>
+				<li class="ok">
+					<em>[<span>美食</span>]</em>
+					<a href="#">推荐几款性价比比较好的冰箱...</a>
+				</li>
+				<li class="stop">
+					<em>[<span>购物</span>]</em>
+					<a href="#">生活中哪些商品的包装有缺陷</a>
+				</li>
+			</ul>
+			<ul class="i-know">
+				<li class="ok">
+					<em>[<span>美食</span>]</em>
+					<a href="#">推荐几款性价比比较好的冰箱...</a>
+				</li>
+				<li class="ok">
+					<em>[<span>美食</span>]</em>
+					<a href="#">推荐几款性价比比较好的冰箱...</a>
+				</li>
+				<li class="stop">
+					<em>[<span>购物</span>]</em>
+					<a href="#">生活中哪些商品的包装有缺陷</a>
+				</li>
+				<li class="stop">
+					<em>[<span>购物</span>]</em>
+					<a href="#">生活中哪些商品的包装有缺陷</a>
+				</li>
+				<li class="stop">
+					<em>[<span>休闲</span>]</em>
+					<a href="#">为什么我第一次进入保姆和宠物</a>
+				</li>
+			</ul>
+			<ul class="i-know">
+				<li class="ok">
+					<em>[<span>美食</span>]</em>
+					<a href="#">推荐几款性价比比较好的冰箱...</a>
+				</li>
+				<li class="stop">
+					<em>[<span>休闲</span>]</em>
+					<a href="#">为什么我第一次进入保姆和宠物</a>
+				</li>
+				<li class="ok">
+					<em>[<span>美食</span>]</em>
+					<a href="#">推荐几款性价比比较好的冰箱...</a>
+				</li>
+				<li class="stop">
+					<em>[<span>购物</span>]</em>
+					<a href="#">生活中哪些商品的包装有缺陷</a>
+				</li>
+				<li class="stop">
+					<em>[<span>购物</span>]</em>
+					<a href="#">生活中哪些商品的包装有缺陷</a>
+				</li>
+			</ul>
+		</div>
 		<div class="tab-search-wrap cl">
 			<h4 class="tab-search fl">搜搜谁知道：</h4>
 			<form action="" class="tab-select">
@@ -726,7 +822,7 @@
 	<em>COUPONS</em>抢卷儿<a href="#" title="点击查看更多"><img src="img/more.png" alt="点击查看更多"></a>
 </h2>
 <div class="model-tab side-tab">
-	<ul class="cl">
+	<ul class="cl" id="sideTabUl">
 		<li class="active">
 			人气
 			<div class="arrow a-down-red"></div>
@@ -747,33 +843,89 @@
 		<span class="side-save">省</span>
 		<span class="print">打印</span>
 	</h3>
-	<ul id="sideTabUl">
-		<li>
-			<a href="#">老北京一尊皇牛</a>
-			<span class="save-detail">12%</span>
-			<span class="print-detail">345</span>
-		</li>
-		<li>
-			<a href="#">老北京一尊皇牛</a>
-			<span class="save-detail">12%</span>
-			<span class="print-detail">345</span>
-		</li>
-		<li>
-			<a href="#">老北京一尊皇牛</a>
-			<span class="save-detail">12%</span>
-			<span class="print-detail">345</span>
-		</li>
-		<li>
-			<a href="#">老北京一尊皇牛</a>
-			<span class="save-detail">12%</span>
-			<span class="print-detail">345</span>
-		</li>
-		<li class="last-li">
-			<a href="#">老北京一尊皇牛</a>
-			<span class="save-detail">12%</span>
-			<span class="print-detail">345</span>
-		</li>
-	</ul>
+	<div class="sideUl-wrap">
+		<ul class="sideTabUl">
+			<li>
+				<a href="#">老北京一尊皇牛</a>
+				<span class="save-detail">12%</span>
+				<span class="print-detail">345</span>
+			</li>
+			<li>
+				<a href="#">老北京一尊皇牛</a>
+				<span class="save-detail">12%</span>
+				<span class="print-detail">345</span>
+			</li>
+			<li>
+				<a href="#">老北京一尊皇牛</a>
+				<span class="save-detail">12%</span>
+				<span class="print-detail">345</span>
+			</li>
+			<li>
+				<a href="#">老北京一尊皇牛</a>
+				<span class="save-detail">12%</span>
+				<span class="print-detail">345</span>
+			</li>
+			<li class="last-li">
+				<a href="#">老北京一尊皇牛</a>
+				<span class="save-detail">12%</span>
+				<span class="print-detail">345</span>
+			</li>
+		</ul>
+		<ul class="sideTabUl">
+			<li>
+				<a href="#">一尊皇牛老北京</a>
+				<span class="save-detail">32%</span>
+				<span class="print-detail">453</span>
+			</li>
+			<li>
+				<a href="#">一尊皇牛老北京</a>
+				<span class="save-detail">32%</span>
+				<span class="print-detail">453</span>
+			</li>
+			<li>
+				<a href="#">一尊皇牛老北京</a>
+				<span class="save-detail">32%</span>
+				<span class="print-detail">453</span>
+			</li>
+			<li>
+				<a href="#">一尊皇牛老北京</a>
+				<span class="save-detail">32%</span>
+				<span class="print-detail">453</span>
+			</li>
+			<li class="last-li">
+				<a href="#">一尊皇牛老北京</a>
+				<span class="save-detail">32%</span>
+				<span class="print-detail">453</span>
+			</li>
+		</ul>
+		<ul class="sideTabUl">
+			<li>
+				<a href="#">一尊北皇牛老京</a>
+				<span class="save-detail">65%</span>
+				<span class="print-detail">234</span>
+			</li>
+			<li>
+				<a href="#">一尊北皇牛老京</a>
+				<span class="save-detail">65%</span>
+				<span class="print-detail">234</span>
+			</li>
+			<li>
+				<a href="#">一尊北皇牛老京</a>
+				<span class="save-detail">65%</span>
+				<span class="print-detail">234</span>
+			</li>
+			<li>
+				<a href="#">一尊北皇牛老京</a>
+				<span class="save-detail">65%</span>
+				<span class="print-detail">234</span>
+			</li>
+			<li class="last-li">
+				<a href="#">一尊北皇牛老京</a>
+				<span class="save-detail">65%</span>
+				<span class="print-detail">453</span>
+			</li>
+		</ul>
+	</div>
 </div>
 <div class="section-side shop-today">
 <h2 class="more-title">
@@ -894,7 +1046,7 @@
 	</li>
 </ul>
 </div>
-<div class="section-side">
+<div class="section-side" id="joinPart">
 <h2 class="more-title">
 	<em>COUPONS</em>最新加盟<a href="#" title="点击查看更多"><img src="img/more.png" alt="点击查看更多"></a>
 </h2>
